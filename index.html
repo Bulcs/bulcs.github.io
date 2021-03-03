@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+    <title>VINI</title>
+	<meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c1c959b965.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    
+    </head>
+
+    <body>
+    	<!-- FIRST VIEW -->
+    	<header id="header">
+	    	<div class="container-fluid">
+	    		<div class="row">
+		    			<div id="logo-div" class="col-2 logo-div">
+		    				<img src="img/logo-w-version.png">
+		    			</div>
+		    			<div id="menu" class="col-5 menu">
+		    				<ul>
+		    					<a href="#home"><li>Home</li></a>
+		    					<a href="#about-me"><li>About me</li></a>
+		    					<a href="#porfolio"><li>Portfolio</li></a>
+		    					<a href="#contact"><li>Contact</li></a>
+		    					<a>
+		    						<li>
+		    							<i class="far fa-sun" style="color: #241F23;"></i>
+		    							<label class="switch">
+										  <input type="checkbox" checked>
+										  <span></span> 
+										</label>
+										<i class="far fa-moon" style="color: #241F23;"></i>
+									</li>
+								</a>
+		    				</ul>
+		    			</div>
+		    			<div id="list-social" class="col-3 list-social">
+		    				<ul>
+		    					<a href="#mail"><li><i class="far fa-envelope fa-lg"></i></li></a>
+		    					<a href="#insta"><li><i class="fab fa-instagram fa-lg"></i></li></a>
+		    					<a href="#whats"><li><i class="fab fa-whatsapp fa-lg"></i></li></a>
+		    					<a href="#linkedin"><li><i class="fab fa-linkedin-in fa-lg"></i></li></a>
+		    				</ul>
+		    			</div>
+		    			<div id="button-contact" class="col-2 button-contact">
+		    				<button>Contact me</button>
+		    			</div>
+	    </header>
+		    		<div class="col-12 bg-white-theme">
+		    			<div class="phrase-first-view">
+		    				<h1>Welcome to my World, <br>you can call me <span style="color:#A81EEB;">V</span></h1>
+		    				<p>Front-end developer, UI/UX designer</p>
+		    			</div>
+		    			<img class="me" src="img/me2.png">
+		    		</div>
+	    		</div>
+	    	</div>
+	    	<!-- FIRST VIEW -->
+
+
+	    	<!-- ABOUT ME -->
+
+	    	<div class="container-fluid second-bg">
+	    		<div class="container">
+		    		<div class="row">
+		    			<div class="col-6">
+		    				
+		    			</div>
+		    			<div class="col-6">
+		    				<h1>About me.</h1>
+		    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in lorem tellus. Donec in mauris dignissim, aliquam enim eu, bibendum enim. Mauris quis metus a orci tempor luctus ut id lorem.</p>
+		    			</div>
+		    		</div>
+		    	</div>
+	    	</div>
+
+	    	<!-- ABOUT ME -->
+
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+		  	document.getElementById("header").style.paddingBottom = "20px";
+		    document.getElementById("header").style.backgroundColor = "rgba(242, 242, 242)";
+		    document.getElementById("header").style.transition = "all 2s";
+		    document.getElementById("header").style.boxShadow = "0 2px 6px 0px rgba(0,0,0,0.15)";
+		    //document.getElementById("logo-div").style.marginTop = '20px';
+		    //document.getElementById("menu").style.marginTop = '29px';
+		  } else {
+		  	document.getElementById("header").style.boxShadow = "0 8px 6px -6px rgba(0,0,0,0)";
+		  	document.getElementById("header").style.paddingBottom = "0px";
+		    document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0)";
+		    //document.getElementById("logo-div").style.marginTop = '20px';
+		    //document.getElementById("menu").style.marginTop = '58px';
+		  }
+		}
+</script>
+    </body>
+</html>
