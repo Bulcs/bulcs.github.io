@@ -24,7 +24,7 @@ h3{
 .logo-div{
 	margin-top: 40px;
 }
-.logo-div > img{
+.logo-div > a > img{
 	float: right;
 	width: 96px;
 }
@@ -295,7 +295,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 
 
 /*--------------- portfolio start ----------------*/
-.portfolio{
+#portfolio{
 	margin-top: 128px;
 }
 .title-portfolio{
@@ -332,7 +332,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 
 
 /*--------------- contact me start ----------------*/
-.contact-me{
+#contact-me{
 	padding-bottom: 128px;
 }
 .title-contact{

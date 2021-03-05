@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 	<head>
     <title>VINI</title>
 	<meta charset="UTF-8">
@@ -17,14 +17,14 @@
 	    	<div class="container-fluid">
 	    		<div class="row">
 		    			<div id="logo-div" class="col-2 logo-div">
-		    				<img src="img/logo-w-version.png">
+		    				<a href="index.html"><img src="img/logo-w-version.png"></a>
 		    			</div>
 		    			<div id="menu" class="col-5 menu">
 		    				<ul>
-		    					<a href="#home"><li>Home</li></a>
+		    					<a href="#"><li>Home</li></a>
 		    					<a href="#about-me"><li>About me</li></a>
-		    					<a href="#porfolio"><li>Portfolio</li></a>
-		    					<a href="#contact"><li>Contact</li></a>
+		    					<a href="#portfolio"><li>Portfolio</li></a>
+		    					<a href="#contact-me"><li>Contact</li></a>
 		    					<a>
 		    						<li>
 		    							<i class="far fa-sun" style="color: #241F23;"></i>
@@ -39,14 +39,14 @@
 		    			</div>
 		    			<div id="list-social" class="col-3 list-social">
 		    				<ul>
-		    					<a href="#mail"><li><i class="far fa-envelope fa-lg"></i></li></a>
-		    					<a href="#insta"><li><i class="fab fa-instagram fa-lg"></i></li></a>
-		    					<a href="#whats"><li><i class="fab fa-whatsapp fa-lg"></i></li></a>
-		    					<a href="#linkedin"><li><i class="fab fa-linkedin-in fa-lg"></i></li></a>
+		    					<a href="mailto:vrbulcao@hotmail.com"><li><i class="far fa-envelope fa-lg"></i></li></a>
+		    					<a href="https://www.instagram.com/vinicius.webp/" target="_blank"><li><i class="fab fa-instagram fa-lg"></i></li></a>
+		    					<a href="https://api.whatsapp.com/send?phone=5584996678639" target="_blank"><li><i class="fab fa-whatsapp fa-lg"></i></li></a>
+		    					<a href="https://www.linkedin.com/in/vin%C3%ADcius-ribeiro-bulc%C3%A3o-b71438180/" target="_blank"><li><i class="fab fa-linkedin-in fa-lg"></i></li></a>
 		    				</ul>
 		    			</div>
 		    			<div id="button-contact" class="col-2 button-contact">
-		    				<button>Contact me</button>
+		    				<a href="#contact-me"><button>Contact me</button></a>
 		    			</div>
 	    </header>
 		    		<div class="col-12 bg-white-theme">
@@ -66,7 +66,7 @@
 	    	<div class="container-fluid second-bg">
 	    		<div class="container">
 	    			<!-- ABOUT ME -->
-		    		<div class="row">
+		    		<div class="row" id="about-me">
 		    			<div class="col-6 me2-div">
 		    				<img src="img/me3.png">
 		    			</div>
@@ -168,10 +168,10 @@
 			    				</div>
 			    				<div class="list-social social-keep">
 				    				<ul>
-				    					<a href="#mail" style="margin-left: 0;"><li><i class="far fa-envelope fa-lg"></i></li></a>
-				    					<a href="#insta"><li><i class="fab fa-instagram fa-lg"></i></li></a>
-				    					<a href="#whats"><li><i class="fab fa-whatsapp fa-lg"></i></li></a>
-				    					<a href="#linkedin"><li><i class="fab fa-linkedin-in fa-lg"></i></li></a>
+				    					<a href="mailto:vrbulcao@hotmail.com" target="_blank" style="margin-left: 0;"><li><i class="far fa-envelope fa-lg"></i></li></a>
+				    					<a href="https://www.instagram.com/vinicius.webp/" target="_blank"><li><i class="fab fa-instagram fa-lg"></i></li></a>
+				    					<a href="https://api.whatsapp.com/send?phone=5584996678639" target="_blank"><li><i class="fab fa-whatsapp fa-lg"></i></li></a>
+				    					<a href="https://www.linkedin.com/in/vin%C3%ADcius-ribeiro-bulc%C3%A3o-b71438180/" target="_blank"><li><i class="fab fa-linkedin-in fa-lg"></i></li></a>
 			    					</ul>
 			    				</div>
 			    			</div>
@@ -181,7 +181,7 @@
 		    		<!-- ABOUT ME -->
 
 		    		<!-- PORTFOLIO -->
-		    		<div class="row portfolio">
+		    		<div class="row" id="portfolio">
 		    			<div class="col-12 title-portfolio">
 		    				<h1>Portfolio.</h1>
 		    			</div>
@@ -225,7 +225,7 @@
 		    		<!-- PORTFOLIO -->
 
 		    		<!-- CONTACT ME -->
-		    		<div class="row contact-me">
+		    		<div class="row" id="contact-me">
 		    			<div class="title-contact col-12">
 		    				<h1>Contact me.</h1>
 		    			</div>
@@ -235,19 +235,19 @@
 		    					<p style="color:#646464;font-size: 14px;font-weight: 500;">If you prefere, you can send me an email at <a href="mailto: vrbulcao@hotmail.com" onmouseover="this.style.color='#7f15b3'" onmouseout="this.style.color='#A81EEB'" style="color:#A81EEB;">vrbulcao@hotmail.com</a> or call me if you want at <a href="tel: +55 84 9 9667-8639" onmouseover="this.style.color='#7f15b3'" onmouseout="this.style.color='#A81EEB'" style="color:#A81EEB;">+55 84 9 9667-8639</a></p>
 		    				</div>
 		    				<div id="form-section">
-		    					<form>
+		    					<form method="post" action="mailto:vrbulcao@hotmail.com">
 		    						<div class="forms-back">
-		    							<input type="text" id="name" name="name" placeholder="Your name" required=""></input>
+		    							<input type="text" id="name" name="Contact-Name" placeholder="Your name" required=""></input>
 		    						</div>
 		    						<div class="forms-back">
-			    						<input type="email" id="email" name="email" placeholder="Email" required></input>
+			    						<input type="email" id="email" name="Contact-Email" placeholder="Email" required></input>
 			    					</div>
 			    					<div class="forms-back">
 			    						<input type="text" id="subject" name="subject" placeholder="Subject" required></input>
 			    					</div>
 		    						
 		    						<div class="message-back">
-		    							<textarea rows="4" cols="41" name="comment" form="usrform" placeholder="Message" required=""></textarea>
+		    							<textarea rows="4" cols="41" name="Contact-Message" form="usrform" placeholder="Message" required=""></textarea>
 		    						</div>
 		    						<input id="submit-button" type="submit" id="submit" name="submit" value="Submit">
 		    					</form>
