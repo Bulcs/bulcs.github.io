@@ -197,6 +197,11 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 /*--------------- first view end ----------------*/
 /*--------------- about me start ----------------*/
 /*--------------- skills start ----------------*/
+.title-sub-about-me > p {
+	color:#646464;
+	font-size: 14px;
+	font-weight: 500;
+}
 .skills{
 	margin: 56px 0 56px 0;
 }
@@ -475,3 +480,42 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 }
 /*--------------- footer end ----------------*/
 
+@media only screen and (max-width: 1000px){
+	.me{
+		width: 50vh;
+		height: 50vh;
+	}
+	.bg-white-theme{
+		height: 50vh;
+	}
+	.menu > ul > a{
+		margin:0;
+		padding: 2px 12px 2px 12px;
+	}
+	.menu > ul > a > li{
+		font-size: 12px;
+	}
+	
+	.phrase-first-view > h1{
+		font-size: 32px;
+	}
+	.phrase-first-view{
+		left: 8vh;
+		top:22vh;
+	}
+	.phrase-first-view > p{
+		font-size:14px;
+	}
+	.me2-div > img{
+		width: 100%;
+	}
+	h1{
+		font-size: 32px;
+	}
+	h3{
+		font-size: 24px;
+	}
+	.title-sub-about-me > p {
+		font-size: 12px;
+	}
+}
