@@ -3,13 +3,24 @@
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 }
+:root {
+	--main-background-color: #f2f2f2;
+	--second-background-color:#E5E5E5;
+	--main-text-color:#212529;
+	--second-text-color:#646464;
+	--purple-color:#A81EEB;
+	--darker-purple-color:#941bcf;
+}
 h1{
 	font-weight: 800;
+	color: var(--main-text-color);
 }
 h6{
+	color: var(--main-text-color);
 	font-weight: 600;
 }
 h3{
+	color: var(--main-text-color);
 	font-weight: 800;
 	font-size: 32px;
 }
@@ -19,6 +30,10 @@ h3{
 	width: 100%;
 	z-index: 10;
 	background-color: rgba(0,0,0,0);
+	display: flex;
+}
+.navbar{
+	padding-top: 0px !important;
 }
 /*--------------- menu start ----------------*/
 .logo-div{
@@ -84,7 +99,7 @@ h3{
 	border-color: #A81EEB;
 }
 .button-contact button:hover{
-	color: #F2F2F2;
+	color: var(--main-background-color);
 	background-color: #A81EEB;
 }
 /*--------------- switch button start ----------------*/
@@ -171,7 +186,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 .bg-white-theme{
 	height: 100vh;
 	width: 100%;
-	background-color: #F2F2F2;
+	background-color: var(--main-background-color);
 }
 .me{
 	float: right;
@@ -187,7 +202,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 }
 .second-bg{
 	padding-top: 128px;
-	background-color: #E5E5E5;
+	background-color: var(--second-background-color);
 }
 .me2-div > img{
 	width: 512px;
@@ -200,7 +215,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	height: 6px;
 	box-sizing: content-box;
 	padding: 4px;
-	background-color: #F2F2F2;
+	background-color: var(--main-background-color);
 	border-radius: 8px;	
 }
 .percent{
@@ -268,8 +283,11 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	text-decoration: none;
 	color:#A81EEB;
 }
-.link-certificates > a:hover{
-	color:#941bcf;
+.link-certificates > a > h6{
+	color: var(--purple-color);
+}
+.link-certificates > a > h6:hover{
+	color: var(--darker-purple-color);
 	text-decoration: underline;	
 }
 /*--------------- certificates end ----------------*/
@@ -387,12 +405,12 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 }
 #submit-button:hover{
 	background-color: #A81EEB;
-	color:#F2F2F2;
+	color: var(--main-background-color);
 }
 
 
 #img-form{
-	background-color:#F2F2F2;
+	background-color: var(--main-background-color);
 	border-radius: 16px;
 	width: 448px;
 	height: 480px;
@@ -413,7 +431,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 /*--------------- footer start ----------------*/
 
 #footer{
-	background-color: #f2f2f2;
+	background-color: var(--main-background-color);
 	border-radius: 64px 64px 0 0;
 }
 .logo-bottom{
@@ -456,3 +474,4 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	text-align: center;
 }
 /*--------------- footer end ----------------*/
+
