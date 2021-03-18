@@ -345,7 +345,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	cursor: pointer;
 	opacity: 1;
 }
-#carouselExampleIndicators{
+#carouselExampleCaptions{
 	display: none;
 }
 /*--------------- portfolio end ----------------*/
@@ -515,10 +515,24 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	.title-sub-about-me > p {
 		font-size: 12px;
 	}
-	#carouselExampleIndicators{
+	#carouselExampleCaptions{
 		display: block;
 	}
 	.portfolio-works{
 		display: none;
+	}
+	#img-form{
+		display: none;
+	}
+	.me2-div > img{
+		display: block;
+		width: 64%;
+		margin: 0 auto 0 auto;
+	}
+	.me2-div{
+		margin-bottom: 56px;
+	}
+	.second-bg{
+		padding-top: 64px;
 	}
 }
