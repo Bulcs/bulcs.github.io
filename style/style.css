@@ -214,6 +214,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 }
 .skills-div{
 	display: flex;
+	position: relative;
 }
 .back-bar{
 	width: 100%;
@@ -222,12 +223,6 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	padding: 4px;
 	background-color: var(--main-background-color);
 	border-radius: 8px;	
-}
-.percent{
-	display: block;
-	position: relative;
-	z-index: 1;
-	left: 69%;
 }
 .front-end-div{
 	margin: 24px 0 24px 0;
@@ -350,7 +345,9 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	cursor: pointer;
 	opacity: 1;
 }
-
+#carouselExampleIndicators{
+	display: none;
+}
 /*--------------- portfolio end ----------------*/
 
 
@@ -517,5 +514,11 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	}
 	.title-sub-about-me > p {
 		font-size: 12px;
+	}
+	#carouselExampleIndicators{
+		display: block;
+	}
+	.portfolio-works{
+		display: none;
 	}
 }
