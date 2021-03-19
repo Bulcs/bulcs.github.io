@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
     <script
       src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
       data-auto-a11y="true"
@@ -16,21 +16,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    
+    <script src="scripts/scripts.js"></script>
     </head>
 
     <body>
     	<!-- FIRST VIEW -->
-    		<nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+    		<nav id="header" class="col-12 navbar navbar-expand-lg navbar-light">
 			  <div class="container-fluid">
 			    <div id="logo-div" class="col-2 logo-div">
 		    		<a href="index.html"><img src="img/logo-w-version.png"></a>
 		    	</div>
-			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    <button id="header-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
 			    </button>
 			    <div class="col-8 collapse navbar-collapse" id="navbarNavAltMarkup">
-			      <div class="navbar-nav" style="float: right;">
+			      <div class="navbar-nav">
 			        <a class="nav-link" href="#">Home</a>
 		    		<a class="nav-link" href="#about-me">About me</a>
 		    		<a class="nav-link" href="#portfolio">Portfolio</a>
@@ -46,11 +46,11 @@
 					</a>
 
 					</div>
-			    	<div class="d-flex" style="float: right;">
-			    		<a class="nav-link" href="mailto:vrbulcao@hotmail.com"><i class="far fa-envelope fa-lg"></i></a>
-			    		<a class="nav-link" href="https://www.instagram.com/vinicius.webp/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-			    		<a class="nav-link" href="https://api.whatsapp.com/send?phone=5584996678639" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
-			    		<a class="nav-link" href="https://www.linkedin.com/in/vin%C3%ADcius-ribeiro-bulc%C3%A3o-b71438180/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+			    	<div class="d-flex">
+			    		<a class="nav-link links-menu" href="mailto:vrbulcao@hotmail.com"><i class="far fa-envelope fa-lg"></i></a>
+			    		<a class="nav-link links-menu" href="https://www.instagram.com/vinicius.webp/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+			    		<a class="nav-link links-menu" href="https://api.whatsapp.com/send?phone=5584996678639" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
+			    		<a class="nav-link links-menu" href="https://www.linkedin.com/in/vin%C3%ADcius-ribeiro-bulc%C3%A3o-b71438180/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
 				    </div>
 			    		
 			  </div>
@@ -339,14 +339,14 @@
 	    	</div>
 
 	    	
-
+<!--
 <script>
 		window.onscroll = function() {scrollFunction()};
 
 		function scrollFunction() {
 		  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
 		  	document.getElementById("header").style.paddingBottom = "20px";
-		    document.getElementById("header").style.backgroundColor = "rgba(242, 242, 242) ";
+		    document.getElementById("header").style.backgroundColor = "rgba(242, 242, 242, 1)";
 		    document.getElementById("header").style.transition = "all 2s";
 		    document.getElementById("header").style.boxShadow = "0 2px 6px 0px rgba(0,0,0,0.15) ";
 		  } else {
@@ -355,6 +355,7 @@
 		    document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0)";
 		  }
 		}
-</script>
+</script>-->
+
     </body>
 </html>
