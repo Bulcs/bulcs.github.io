@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif !important;
 }
 :root {
 	--main-background-color: #f2f2f2;
@@ -25,11 +25,30 @@ h3{
 	font-size: 32px;
 }
 /*--------------- first view start ----------------*/
+
+.navbar-nav{
+	margin-top: 40px;
+	margin-left: 20px;
+}
+.nav-link{
+	margin: 10px;
+	font-size: 14px;
+	color: #241F23 !important;
+	font-weight: 600;
+}
+
+.nav-link:hover{
+	color:#A81EEB !important;
+}
+.theme:hover{
+	text-decoration: none;
+}
+
 #header{
 	position: fixed;
 	width: 100%;
 	z-index: 10;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0) !important;
 	display: flex;
 }
 .navbar{
@@ -67,18 +86,19 @@ h3{
 .menu > ul > a > li{
 	font-size: 14px;
 }
-.list-social{
-	margin-top: 58px;
-
-}
-.list-social > ul{
-	display: flex;
-	float: right;
+.d-flex{
+	margin-top: 40px;
+	position: relative;
+	
 	list-style: none;
 	text-decoration: none;
 }
+.list-social > ul{
+	display: flex;
+}
 .list-social > ul > a{
 	color: #241F23;
+	list-style: none;
 	margin: 0 16px 0 16px;
 }
 .list-social > ul > a:hover{
