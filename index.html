@@ -4,7 +4,7 @@
 	<link rel="shortcut icon" href="icons/logo-b-version.ico">
     <title>VINI</title>
 	<meta charset="UTF-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     
@@ -12,6 +12,7 @@
       src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
       data-auto-a11y="true"
     ></script>
+
     <script src="https://kit.fontawesome.com/c1c959b965.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
@@ -20,8 +21,36 @@
     </head>
 
     <body>
+    	<header>
+    		<div class="logo"><img src="img/logo-w-version.png"></div>
+    		<nav>
+    			<ul>
+    				<li><a class="nav-link" href="#">Home</a></li>
+    				<li><a class="nav-link" href="#about-me">About me</a></li>
+    				<li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+    				<li><a class="nav-link" href="#contact-me">Contact me</a></li>
+    				<li><a class="nav-link theme">
+		    			<i class="far fa-sun" style="color: #241F23;"></i>
+		    			<label class="switch">
+							<input type="checkbox">
+						<span></span> 
+						</label>
+						<i class="far fa-moon" style="color: #241F23;"></i>
+									
+					</a></li>
+    			</ul>
+    			<ul class="d-flex">
+    				<li><a class="nav-link links-menu" href="mailto:vrbulcao@hotmail.com"><i class="far fa-envelope fa-lg"></i></a></li>
+			    	<li><a class="nav-link links-menu" href="https://www.instagram.com/vinicius.webp/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+			    	<li><a class="nav-link links-menu" href="https://api.whatsapp.com/send?phone=5584996678639" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+			    	<li><a class="nav-link links-menu" href="https://www.linkedin.com/in/vin%C3%ADcius-ribeiro-bulc%C3%A3o-b71438180/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+    			</ul>
+    		</nav>
+    		<div class="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></div>
+    	</header>
     	<!-- FIRST VIEW -->
-    		<nav id="header" class="col-12 navbar navbar-expand-lg navbar-light">
+    	<!--
+    		<nav id="header" class="col-12 navbar navbar-expand-lg navbar-light" >
 			  <div class="container-fluid">
 			    <div id="logo-div" class="col-2 logo-div">
 		    		<a href="index.html"><img src="img/logo-w-version.png"></a>
@@ -55,7 +84,7 @@
 			    		
 			  </div>
 			</div>
-
+			-->
 			</nav>
 	    	<div class="container-fluid">
 	    		<div class="row" >
@@ -338,24 +367,29 @@
 		    		<!-- FOOTER -->
 	    	</div>
 
-	    	
+
+	    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    	<script type="text/javascript">
+	    		$(document).ready(function(){
+	    			$('.menu-toggle').click(function(){
+	    				$('nav').toggleClass('active')
+	    			})
+	    		})
+	    	</script>	
 <!--
 <script>
-		window.onscroll = function() {scrollFunction()};
+		function clickButton(){
+			var x = document.getElementById("header");
 
-		function scrollFunction() {
-		  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-		  	document.getElementById("header").style.paddingBottom = "20px";
-		    document.getElementById("header").style.backgroundColor = "rgba(242, 242, 242, 1)";
-		    document.getElementById("header").style.transition = "all 2s";
-		    document.getElementById("header").style.boxShadow = "0 2px 6px 0px rgba(0,0,0,0.15) ";
-		  } else {
-		  	document.getElementById("header").style.boxShadow = "0 8px 6px -6px rgba(0,0,0,0)";
-		  	document.getElementById("header").style.paddingBottom = "0px";
-		    document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0)";
-		  }
+			if (x.style.backgroundColor === "transparent") {
+			    x.style.backgroundColor = "rgba(242, 242, 242, 1)";
+			    x.style.boxShadow = "0 2px 6px 0px rgba(0,0,0,0.15)";
+			  } else {
+			    x.style.backgroundColor = "transparent";
+			    x.style.boxShadow = "0 2px 6px 0px rgba(0,0,0,0)";
+			  }
 		}
-</script>-->
-
+</script>
+-->
     </body>
 </html>

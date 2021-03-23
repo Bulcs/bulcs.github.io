@@ -25,7 +25,102 @@ h3{
 	font-size: 32px;
 }
 /*--------------- first view start ----------------*/
+header{
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 24px 100px;
+	background-color: transparent;
+	width: 100%;
+	z-index: 10;
+	box-sizing: border-box;
+	font-weight: 600;
+}
+.logo > img{
+	width: 100px;
+	float: left;
+}
+header nav{
+	float: left;
+	display: flex;
+}
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+}
+header nav ul li{
+	padding: 10px 0;
+}
+.nav-link{
+	display: inline;
+	vertical-align: middle;
+}
+.nav-link{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color:#241F23;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: center;
+}
+.nav-link:hover{
+	color:#A81EEB;
+	text-decoration: overline;
+}
+.theme{
+	text-decoration: none !important;
+	display: inline;
+	vertical-align: middle;
+}
+.menu-toggle{
+	color:#241F23;
+	float: right;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+}
+@media (max-width: 991px){
+	header{
+		position: fixed;
+		padding: 24px 32px;
+	}
+	.menu-toggle{
+		display: block;
+		z-index: 100;
+		position: relative;
+	}
+	header nav{
+		position: absolute;
+		display: block;
+		z-index: 1;
+		right: -100%;
+		width: 50%;
+		height: 100vh;
+		top: 0px;
+		background: rgba(242, 242, 242, 0.9);
+		transition: 0.5s;
+		box-shadow: 2px -6px 6px 0px rgba(0,0,0,0.8);
+	}
+	header nav.active{
+		right: 0;
+	}
+	header nav ul {
+		display: block;
+		text-align: center;
+	}
+	header nav ul li a {
 
+	}
+	.d-flex{
+		justify-content:center;
+		align-items:center;
+	}
+}
+/*
 .navbar-nav{
 	margin-top: 40px;
 	margin-left: 20px;
@@ -49,13 +144,13 @@ h3{
 	position: fixed;
 	width: 100%;
 	z-index: 10;
-	
 	display: flex;
 }
 .navbar{
 	padding-top: 0px !important;
 }
-/*--------------- menu start ----------------*/
+*/
+/*--------------- menu start ----------------
 .links-menu{
 	padding: 5px;
 }
@@ -98,17 +193,7 @@ h3{
 	list-style: none;
 	text-decoration: none;
 }
-.list-social > ul{
-	display: flex;
-}
-.list-social > ul > a{
-	color: #241F23;
-	list-style: none;
-	margin: 0 16px 0 16px;
-}
-.list-social > ul > a:hover{
-	color:#A81EEB;
-}
+
 .button-contact{
 	margin-top: 48px;
 }
@@ -127,7 +212,7 @@ h3{
 	color: var(--main-background-color);
 	background-color: #A81EEB;
 }
-/*--------------- switch button start ----------------*/
+--------------- switch button start ----------------*/
 
 label.switch {  
   text-align: left;
@@ -324,7 +409,17 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 /*--------------- web experience end ----------------*/
 
 /*--------------- keep in touch start ----------------*/
-
+.list-social > ul{
+	display: flex;
+}
+.list-social > ul > a{
+	color: #241F23;
+	list-style: none;
+	margin: 0 16px 0 16px;
+}
+.list-social > ul > a:hover{
+	color:#A81EEB;
+}
 .social-keep{
 	float: left;
 	margin-top: 28px;
