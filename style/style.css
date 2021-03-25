@@ -85,9 +85,6 @@ header nav ul li{
 	cursor: pointer;
 	display: none;
 }
-@media only screen and (max-width: 991px){
-	
-}
 
 label.switch {  
   text-align: left;
@@ -262,6 +259,11 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 .link-certificates{
 	width:100%; 
 }
+.content-title-experience > p{
+	color:#646464;
+	font-size: 14px;
+	font-weight: 500;
+}
 .link-certificates > a{
 	float: right;
 	display: flex;
@@ -309,7 +311,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 
 /*--------------- portfolio start ----------------*/
 #portfolio{
-	margin-top: 128px;
+	margin-top: 104px;
 }
 .title-portfolio{
 	margin-bottom:80px; 
@@ -355,6 +357,11 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 }
 .title-contact{
 	text-align: center;
+}
+.title-sub-form > p{
+	font-size:14px;
+	color:#646464;
+	font-weight: 500;
 }
 .forms-back{
 	width: 100%;
@@ -508,6 +515,9 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	h3{
 		font-size: 24px;
 	}
+	h6{
+		font-size: 18px;
+	}
 	.title-sub-about-me > p {
 		font-size: 12px;
 	}
@@ -575,6 +585,15 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 		justify-content:center;
 		align-items:center;
 	}
+	.copyright > p{
+		font-size: 12px;
+	}
+	.content-title-experience > p{
+		font-size: 12px;
+	}
+	.title-sub-form > p{
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 819px) and (min-width: 700px){
@@ -612,6 +631,9 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	}
 	h3{
 		font-size: 18px;
+	}
+	h6{
+		font-size: 14px;
 	}
 	.title-sub-about-me > p {
 		font-size: 12px;
@@ -675,6 +697,18 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 		justify-content:center;
 		align-items:center;
 	}
+	.arrow{
+		display: none;
+	}
+	.copyright > p{
+		font-size: 12px;
+	}
+	.content-title-experience > p{
+		font-size: 12px;
+	}
+	.title-sub-form > p{
+		font-size: 12px;
+	}
 }
 @media only screen and (max-width: 699px) and (min-width: 481px){
 
@@ -712,8 +746,11 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	h3{
 		font-size: 18px;
 	}
-	.title-sub-about-me > p {
+	h6{
 		font-size: 12px;
+	}
+	.title-sub-about-me > p {
+		font-size: 10px;
 	}
 	#carouselExampleCaptions{
 		display: block;
@@ -774,9 +811,23 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 		justify-content:center;
 		align-items:center;
 	}
+	.arrow{
+		display: none;
+	}
+	.copyright > p{
+		font-size: 10px;
+	}
+	.content-title-experience > p{
+		font-size: 10px;
+	}
+	.title-sub-form > p{
+		font-size: 10px;
+	}
 }
 @media only screen and (max-width: 480px) and (min-width: 400px){
-
+	header{
+		padding: 12px 20px !important;
+	}
 	.me{
 		width: 36vh;
 		height: 36vh;
@@ -811,8 +862,11 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	h3{
 		font-size: 18px;
 	}
-	.title-sub-about-me > p {
+	h6{
 		font-size: 12px;
+	}
+	.title-sub-about-me > p {
+		font-size: 10px;
 	}
 	#carouselExampleCaptions{
 		display: block;
@@ -873,9 +927,23 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 		justify-content:center;
 		align-items:center;
 	}
+	.arrow{
+		display: none;
+	}
+	.copyright > p{
+		font-size: 10px;
+	}
+	.content-title-experience > p{
+		font-size: 10px;
+	}
+	.title-sub-form > p{
+		font-size: 10px;
+	}
 }
 @media only screen and (max-width: 399px){
-
+	header{
+		padding: 6px 16px !important;
+	}
 	.me{
 		width: 26vh;
 		height: 26vh;
@@ -910,8 +978,11 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	h3{
 		font-size: 18px;
 	}
-	.title-sub-about-me > p {
+	h6{
 		font-size: 12px;
+	}
+	.title-sub-about-me > p {
+		font-size: 10px;
 	}
 	#carouselExampleCaptions{
 		display: block;
@@ -948,7 +1019,9 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	#menu-toggle-icon{
 		width: 16px;
 	}
-	
+	.arrow{
+		display: none;
+	}
 	header nav{
 		position: absolute;
 		display: block;
@@ -974,5 +1047,14 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	.d-flex{
 		justify-content:center;
 		align-items:center;
+	}
+	.copyright > p{
+		font-size: 10px;
+	}
+	.content-title-experience > p{
+		font-size: 10px;
+	}
+	.title-sub-form > p{
+		font-size: 10px;
 	}
 }

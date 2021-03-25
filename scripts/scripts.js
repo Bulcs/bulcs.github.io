@@ -1,5 +1,19 @@
 window.onscroll = function() {scrollFunction()};
-
+(function(){
+      var words = [
+          'Vinícius',
+          'Vini',
+          'Vi',
+          'Bulcão',
+          'V'
+          ], i = 0;
+      setInterval(function(){
+          $('.changingword').fadeOut(function(){
+              $(this).html(words[i=(i+1)%words.length]).fadeIn();
+          });
+      }, 1600);
+        
+  })();
 		function scrollFunction() {
 		  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 || (document.getElementById('header-button').getAttribute('aria-expanded') == true && window.getComputedStyle(document.getElementById("header-button")).display != "none")) {
 		  	document.getElementById("header").style.paddingBottom = "20px";
@@ -12,3 +26,4 @@ window.onscroll = function() {scrollFunction()};
 		    document.getElementById("header").style.backgroundColor = "transparent";
 		  }
 		}
+
