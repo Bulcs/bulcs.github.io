@@ -1,4 +1,12 @@
 window.onscroll = function() {scrollFunction()};
+
+const $html = document.querySelector('html')
+const $checkbox = document.querySelector('#switch')
+
+$checkbox.addEventListener('change',function(){
+	$html.classList.toggle('dark-mode')
+})
+
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -55,7 +63,7 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #A81EEB}";
         document.body.appendChild(css);
     };
-    
+
 		function scrollFunction() {
 		  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 || (document.getElementById('header-button').getAttribute('aria-expanded') == true && window.getComputedStyle(document.getElementById("header-button")).display != "none")) {
 		  	document.getElementById("header").style.paddingBottom = "20px";
