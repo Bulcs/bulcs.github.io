@@ -76,4 +76,3 @@ var TxtType = function(el, toRotate, period) {
 		    document.getElementById("header").style.backgroundColor = "transparent";
 		  }
 		}
-
