@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script
       src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
       data-auto-a11y="true"
@@ -242,7 +242,7 @@
 						</div>
 
 
-		    			<div id="openModal" class="col-4 portfolio-works" style="background-image: url(img/mockup1.png);">
+		    			<div class="col-4 portfolio-works" style="background-image: url(img/mockup1.png);">
 		    				<div class="portfolio-hover">
 		    					<h6 style="color:#F2F2F2;">FUT.LOJA</h6>
 		    					<p style="color:#E5E5E5;font-size: 14px;font-weight: 500;">It's a soccer store, that sells shirts, soccer balls.</p>
@@ -292,7 +292,7 @@
 		    					<p>If you prefere, you can send me an email at <a href="mailto: vrbulcao@hotmail.com" onmouseover="this.style.color='#7f15b3'" onmouseout="this.style.color='#A81EEB'" style="color:#A81EEB;">vrbulcao@hotmail.com</a> or call me if you want at <a href="tel: +55 84 9 9667-8639" onmouseover="this.style.color='#7f15b3'" onmouseout="this.style.color='#A81EEB'" style="color:#A81EEB;">+55 84 9 9667-8639</a></p>
 		    				</div>
 		    				<div id="form-section">
-		    					<form method="post" action="mailto:vrbulcao@hotmail.com">
+		    					<form method="post" action="scripts/contact.php" onsubmit="return validateContactForm()">
 		    						<div class="forms-back">
 		    							<input type="text" id="name" name="Contact-Name" placeholder="Your name" required=""></input>
 		    						</div>
