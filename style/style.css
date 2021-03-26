@@ -1076,7 +1076,9 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 		text-align: center;
 	}
 	.nav-link{
+		top: 60px;
 		font-size: 10px;
+		padding: 0px 8px;
 	}
 	.d-flex{
 		justify-content:center;
