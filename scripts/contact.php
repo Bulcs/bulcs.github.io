@@ -1,16 +1,23 @@
 <?php
-if(!empty($_POST["submit"])) {
-	$name = $_POST["Contact-Name"];
-	$email = $_POST["Contact-Email"];
-	$subject = $_POST["subject"];
-	$message = $_POST["Contact-Message"];
+if(isset($_POST['submit'])){
+	$name = $_POST['name'];
+	$mailFrom = $_POST['email'];
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
 
-	$toEmail = "vrbulcao@outlook.com";
-	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
-	if(mail($toEmail, $subject, $message, $mailHeaders)) {
-	    $message = "Your contact information is received successfully.";
-	    $type = "success";
-	}
+	$mailTo = "vrbulcao@outlook.com";
+	$headers = "From: ".$mailFrom;
+	$txt = "PORTFOLIO:\nYou received an email from ".$name."\n\n".$message;
+
+	mail($mailTo,$subject,$txt,$headers);
+	ini_set('display_errors','Off');
+
+	if($mail){
+	  $mgm = "Email sended!";
+	  echo " <meta http-equiv='refresh' content='10;URL=contact.php'>";
+	  } else {
+	  $mgm = "Error to send this email! (GITHUB.IO DOESN'T SUPPORT PHP, THATS WHY YOU CAN'T SEND ME THIS MESSAGE :) ) ";
+	  echo "";
+  }
 }
-require_once "contact-view.php";
 ?>

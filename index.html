@@ -60,10 +60,7 @@
 						  </a></h1>
 		    				<p>Front-end developer, UI/UX designer</p>
 		    			</div>
-		    			
 		    				<img class="col-6 me" src="img/me.webp">
-		    			
-		    			
 		    		</div>
 	    		</div>
 	    	</div>
@@ -293,19 +290,19 @@
 		    					<p>If you prefere, you can send me an email at <a href="mailto: vrbulcao@hotmail.com" onmouseover="this.style.color='#7f15b3'" onmouseout="this.style.color='#A81EEB'" style="color:#A81EEB;">vrbulcao@hotmail.com</a> or call me if you want at <a href="tel: +55 84 9 9667-8639" onmouseover="this.style.color='#7f15b3'" onmouseout="this.style.color='#A81EEB'" style="color:#A81EEB;">+55 84 9 9667-8639</a></p>
 		    				</div>
 		    				<div id="form-section">
-		    					<form method="post" action="scripts/contact.php" onsubmit="return validateContactForm()">
+		    					<form method="post" action="scripts/contact.php">
 		    						<div class="forms-back">
-		    							<input type="text" id="name" name="Contact-Name" placeholder="Your name" required=""></input>
+		    							<input type="text" id="name" name="name" placeholder="Your name" required=""></input>
 		    						</div>
 		    						<div class="forms-back">
-			    						<input type="email" id="email" name="Contact-Email" placeholder="Email" required></input>
+			    						<input type="email" id="email" name="email" placeholder="Email" required></input>
 			    					</div>
 			    					<div class="forms-back">
 			    						<input type="text" id="subject" name="subject" placeholder="Subject" required></input>
 			    					</div>
 		    						
 		    						<div class="message-back">
-		    							<textarea rows="4" cols="41" name="Contact-Message" form="usrform" placeholder="Message" required=""></textarea>
+		    							<textarea rows="4" cols="41" name="message" placeholder="Message"></textarea>
 		    						</div>
 		    						<input id="submit-button" type="submit" id="submit" name="submit" value="Submit">
 		    					</form>
