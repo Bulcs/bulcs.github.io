@@ -368,6 +368,32 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	max-height: 100vh;
 	overflow-y: auto;
 }
+
+/*--------------- modal start ----------------*/
+.modal{
+	padding-left: 17px ; 
+}
+.modal-dialog{
+	max-width: 80%;
+}
+.modal-content{
+	background-color: var(--main-background-color); 
+	border:none;
+}
+.btn-secondary{
+	background-color: var(--purple-color); 
+	border:none;
+}
+.btn-secondary:hover{
+	background-color: var(--darker-purple-color);
+}
+.modal-title{
+	color:var(--main-text-color);
+}
+.btn-close{
+	color:var(--main-text-color);
+}
+/*--------------- modal end ----------------*/
 /*--------------- portfolio end ----------------*/
 
 
@@ -628,6 +654,12 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	.title-sub-form > p{
 		font-size: 12px;
 	}
+	.modal{
+	padding: 40px; 
+	}
+	.modal-dialog{
+		max-width: 100%;
+	}
 }
 
 @media only screen and (max-width: 819px) and (min-width: 700px){
@@ -743,6 +775,13 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	.title-sub-form > p{
 		font-size: 12px;
 	}
+	
+.modal{
+		padding: 30px; 
+	}
+.modal-dialog{
+	max-width: 100%;
+}
 }
 @media only screen and (max-width: 699px) and (min-width: 481px){
 
@@ -856,6 +895,12 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	}
 	.title-sub-form > p{
 		font-size: 10px;
+	}
+	.modal{
+		padding: 30px; 
+	}
+	.modal-dialog{
+		max-width: 100%;
 	}
 }
 @media only screen and (max-width: 480px) and (min-width: 400px){
@@ -972,6 +1017,12 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	}
 	.title-sub-form > p{
 		font-size: 10px;
+	}
+	.modal{
+		padding: 30px; 
+	}
+	.modal-dialog{
+		max-width: 100%;
 	}
 }
 @media only screen and (max-width: 399px){
@@ -1092,5 +1143,12 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 	}
 	.title-sub-form > p{
 		font-size: 10px;
+	}
+	.modal{
+		padding: 30px; 
+	}
+	.modal-dialog{
+		max-width: 100%;
+		width: 100%;
 	}
 }

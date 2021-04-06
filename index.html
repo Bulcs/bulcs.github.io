@@ -199,7 +199,7 @@
 						    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
 						    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
 						  </div>
-						  <div class="carousel-inner">
+						  <div class="carousel-inner" data-bs-toggle="modal" data-bs-target="#modal-work-1">
 						    <div class="carousel-item active">
 						      <img src="img/mockup1.webp" class="d-block w-100" alt="...">
 						      <div class="carousel-caption d-none d-md-block">
@@ -207,21 +207,21 @@
 						        <p style="text-shadow: 2px 2px 4px #000000;">It's a soccer store, that sells shirts, soccer balls.</p>
 						      </div>
 						    </div>
-						    <div class="carousel-item">
+						    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modal-work-2">
 						      <img src="img/mockup2.webp" class="d-block w-100" alt="...">
 						      <div class="carousel-caption d-none d-md-block">
 						        <h5 style="text-shadow: 2px 2px 4px #000000;">Pousada Refúgio do Poeta</h5>
 						        <p style="text-shadow: 2px 2px 4px #000000;">It's a hotel website.</p>
 						      </div>
 						    </div>
-						    <div class="carousel-item">
+						    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modal-work-3">
 						      <img src="img/mockup3.webp" class="d-block w-100" alt="...">
 						      <div class="carousel-caption d-none d-md-block">
 						        <h5 style="text-shadow: 2px 2px 4px #000000;">Looterie</h5>
 						        <p style="text-shadow: 2px 2px 4px #000000;">A concept design for a Sort App.</p>
 						      </div>
 						    </div>
-						    <div class="carousel-item">
+						    <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modal-work-4">
 						      <img src="img/mockup4.webp" class="d-block w-100" alt="...">
 						      <div class="carousel-caption d-none d-md-block">
 						        <h5 style="text-shadow: 2px 2px 4px #000000;">Pharos Website</h5>
@@ -241,25 +241,25 @@
 
 
 		    			<div class="col-4 portfolio-works" style="background-image: url(img/mockup1.webp);">
-		    				<div class="portfolio-hover">
+		    				<div class="portfolio-hover" data-bs-toggle="modal" data-bs-target="#modal-work-1">
 		    					<h6 style="color:#F2F2F2;">FUT.LOJA</h6>
-		    					<p style="color:#E5E5E5;font-size: 14px;font-weight: 500;">It's a soccer store, that sells shirts, soccer balls.</p>
+		    					<p style="color:#E5E5E5;font-size: 14px;font-weight: 500;">It's a soccer store catalog, that sells shirts, soccer balls.</p>
 		    				</div>
 		    			</div>
 		    			<div class="col-4 portfolio-works" style="background-image: url(img/mockup2.webp);">
-		    				<div class="portfolio-hover">
+		    				<div class="portfolio-hover" data-bs-toggle="modal" data-bs-target="#modal-work-2">
 		    					<h6 style="color:#F2F2F2;">Pousada Refúgio do Poeta</h6>
 		    					<p style="color:#E5E5E5;font-size: 14px;font-weight: 500;">It's a design for a hotel website. This design it's in coding process. :)</p>
 		    				</div>
 		    			</div>
 		    			<div class="col-4 portfolio-works" style="background-image: url(img/mockup3.webp);">
-		    				<div class="portfolio-hover">
+		    				<div class="portfolio-hover" data-bs-toggle="modal" data-bs-target="#modal-work-3">
 		    					<h6 style="color:#F2F2F2;">Looterie</h6>
-		    					<p style="color:#E5E5E5;font-size: 14px;font-weight: 500;">A concept design for a Sort App. I was a univesity project.</p>
+		    					<p style="color:#E5E5E5;font-size: 14px;font-weight: 500;">A concept design for a Sort App. It was a univesity project.</p>
 		    				</div>
 		    			</div>
 		    			<div class="col-4 portfolio-works" style="background-image: url(img/mockup4.webp);">
-		    				<div class="portfolio-hover">
+		    				<div class="portfolio-hover" data-bs-toggle="modal" data-bs-target="#modal-work-4">
 		    					<h6 style="color:#F2F2F2;">Pharos Website</h6>
 		    					<p style="color:#E5E5E5;font-size: 14px;font-weight: 500;">A website for a game that UFRN was developing, the game was called Pharos.</p>
 		    				</div>
@@ -277,6 +277,75 @@
 		    				</div>
 		    			</div>
 		    		</div>
+		    		<!-- MODAL'S -->
+		    		<div class="modal fade" id="modal-work-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">FUT.LOJA</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        <img src="img/FUT.LOJA.png" style="width: 100%; height: 100%;">
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="modal fade" id="modal-work-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Pousada Refúgio do Poeta</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        <img src="img/pousada.png" style="width: 100%; height: 100%;">
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="modal fade" id="modal-work-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Looterie</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        <img src="img/looterie.png" style="width: 100%; height: 100%;">
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="modal fade" id="modal-work-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Game Website</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body">
+					        <img src="img/game-website.jpg" style="width: 100%; height: 100%;">
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+		    		<!-- MODAL'S -->
 		    		<!-- PORTFOLIO -->
 
 		    		<!-- CONTACT ME -->
