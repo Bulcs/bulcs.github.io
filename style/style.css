@@ -255,7 +255,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 }
 .back-end-bar {
   display: block;
-  width: 30%;
+  width: 45%;
   height: 100%;
   border-radius: 8px;
   background-color: var(--purple-color);
