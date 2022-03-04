@@ -1200,4 +1200,15 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
     max-width: 100%;
     width: 100%;
   }
+  .cc-btn-a-1 {
+    font-size: 10px;
+    margin-right: 4px;
+  }
+  .cc-btn-a-2 {
+    font-size: 10px;
+    margin-left: 4px;
+  }
+  .curriculum-button {
+    padding: 6px 10px 6px 10px;
+  }
 }
