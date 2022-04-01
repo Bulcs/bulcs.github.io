@@ -113,6 +113,9 @@ header nav ul li {
   cursor: pointer;
   display: none;
 }
+.subtitle {
+  color: var(--second-text-color);
+}
 
 label.switch {
   text-align: left;
@@ -510,6 +513,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 #img-form > img {
   width: 448px;
   float: right;
+  border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   position: absolute;
   bottom: 0;
@@ -572,6 +576,128 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
   text-align: center;
 }
 /*--------------- footer end ----------------*/
+
+@media only screen and (max-width: 1300px) and (min-width: 992px) {
+  .me {
+    width: 80vh;
+    height: 80vh;
+  }
+  .bg-white-theme {
+    height: 80vh;
+  }
+  .menu > ul > a {
+    margin: 0;
+    padding: 2px 12px 2px 12px;
+  }
+  .menu > ul > a > li {
+    font-size: 12px;
+  }
+
+  .phrase-first-view > h1 {
+    font-size: 28px;
+  }
+  .phrase-first-view {
+    left: 8vh;
+    top: 38vh;
+  }
+  .phrase-first-view > p {
+    font-size: 12px;
+  }
+  .me2-div > img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+  .title-sub-about-me > p {
+    font-size: 12px;
+  }
+  #carouselExampleCaptions {
+    display: block;
+  }
+  .portfolio-works {
+    display: none;
+  }
+  #img-form {
+    display: none;
+  }
+  .me2-div > img {
+    display: block;
+    width: 64%;
+    margin: 0 auto 0 auto;
+  }
+  .me2-div {
+    margin-bottom: 56px;
+  }
+  .second-bg {
+    padding-top: 64px;
+  }
+  header {
+    position: fixed;
+    padding: 24px 32px;
+  }
+  .logo > img {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    z-index: 100;
+    position: relative;
+  }
+  .menu-toggle > i {
+    padding: 0 10px;
+    border: solid var(--main-text-color) 1px;
+    border-radius: 50%;
+  }
+  header nav {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    top: 0px;
+    background: var(--nav-mobile);
+    transition: 0.5s;
+    box-shadow: 2px -6px 6px 0px rgba(0, 0, 0, 0.8);
+  }
+  header nav.active {
+    right: 0;
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+  .nav-link {
+    top: 60px;
+    font-size: 14px;
+  }
+  .d-flex {
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright > p {
+    font-size: 12px;
+  }
+  .content-title-experience > p {
+    font-size: 12px;
+  }
+  .title-sub-form > p {
+    font-size: 12px;
+  }
+  .modal {
+    padding: 40px;
+  }
+  .modal-dialog {
+    max-width: 100%;
+  }
+}
 
 @media only screen and (max-width: 991px) and (min-width: 820px) {
   .me {
