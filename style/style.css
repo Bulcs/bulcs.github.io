@@ -224,7 +224,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
   background-color: var(--second-background-color);
 }
 .me2-div > img {
-  width: 512px;
+  width: 440px;
 }
 .skills-div {
   display: flex;
@@ -751,7 +751,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
   }
   .me2-div > img {
     display: block;
-    width: 64%;
+    width: 32%;
     margin: 0 auto 0 auto;
   }
   .me2-div {
@@ -873,7 +873,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
   }
   .me2-div > img {
     display: block;
-    width: 64%;
+    width: 32%;
     margin: 0 auto 0 auto;
   }
   .me2-div {
@@ -999,7 +999,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
   }
   .me2-div > img {
     display: block;
-    width: 64%;
+    width: 38%;
     margin: 0 auto 0 auto;
   }
   .me2-div {
@@ -1127,7 +1127,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
   }
   .me2-div > img {
     display: block;
-    width: 64%;
+    width: 38%;
     margin: 0 auto 0 auto;
   }
   .me2-div {
@@ -1255,7 +1255,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
   }
   .me2-div > img {
     display: block;
-    width: 64%;
+    width: 38%;
     margin: 0 auto 0 auto;
   }
   .me2-div {
