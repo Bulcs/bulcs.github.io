@@ -204,9 +204,11 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 }
 .me {
   float: right;
-  width: 100vh;
+  width: 60vh;
   position: relative;
-  height: 100vh;
+  height: 60vh;
+  right: 240px;
+  top: 240px;
 }
 /*--------------- first view end ----------------*/
 /*--------------- about me start ----------------*/
@@ -389,11 +391,16 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 .title-portfolio > h1 {
   text-align: center;
 }
+
+.portfolio-main {
+  display: flex;
+}
 .portfolio-works {
   margin-bottom: 24px;
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 0;
+  width: 98%;
 }
 .portfolio-hover {
   visibility: hidden;
@@ -418,6 +425,10 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
   padding: 60px 160px;
   max-height: 100vh;
   overflow-y: auto;
+}
+
+.projects-links {
+  text-decoration: none;
 }
 
 /*--------------- modal start ----------------*/
@@ -461,7 +472,16 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
   font-size: 14px;
   color: var(--second-text-color);
   font-weight: 500;
+  text-align: center;
 }
+.title-sub-form > h4 {
+  font-size: 24px;
+  text-align: center;
+}
+#form-section {
+  margin: 0 12%;
+}
+
 .forms-back {
   width: 100%;
   border: solid 2px var(--form-border);
@@ -591,11 +611,13 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 
 @media only screen and (max-width: 1300px) and (min-width: 992px) {
   .me {
-    width: 80vh;
-    height: 80vh;
+    width: 32vh;
+    height: 32vh;
+    top: 100px;
+    right: 80px;
   }
   .bg-white-theme {
-    height: 80vh;
+    height: 50vh;
   }
   .menu > ul > a {
     margin: 0;
@@ -610,7 +632,7 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
   }
   .phrase-first-view {
     left: 8vh;
-    top: 38vh;
+    top: 24vh;
   }
   .phrase-first-view > p {
     font-size: 12px;
@@ -713,11 +735,13 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 
 @media only screen and (max-width: 991px) and (min-width: 820px) {
   .me {
-    width: 50vh;
-    height: 50vh;
+    width: 24vh;
+    height: 24vh;
+    top: 120px;
+    right: 80px;
   }
   .bg-white-theme {
-    height: 50vh;
+    height: 40vh;
   }
   .menu > ul > a {
     margin: 0;
@@ -835,8 +859,10 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 
 @media only screen and (max-width: 819px) and (min-width: 700px) {
   .me {
-    width: 50vh;
-    height: 50vh;
+    width: 24vh;
+    height: 24vh;
+    top: 120px;
+    right: 80px;
   }
   .bg-white-theme {
     height: 50vh;
@@ -961,8 +987,10 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
 }
 @media only screen and (max-width: 699px) and (min-width: 481px) {
   .me {
-    width: 46vh;
-    height: 46vh;
+    width: 24vh;
+    height: 24vh;
+    top: 120px;
+    right: 80px;
   }
   .bg-white-theme {
     height: 46vh;
@@ -1089,8 +1117,10 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
     padding: 12px 20px !important;
   }
   .me {
-    width: 36vh;
-    height: 36vh;
+    width: 16vh;
+    height: 16vh;
+    top: 80px;
+    right: 40px;
   }
   .bg-white-theme {
     height: 36vh;
@@ -1217,8 +1247,10 @@ label.switch > input[type="checkbox"]:checked ~ span:after {
     padding: 6px 16px !important;
   }
   .me {
-    width: 26vh;
-    height: 26vh;
+    width: 16vh;
+    height: 16vh;
+    top: 40px;
+    right: 40px;
   }
   .bg-white-theme {
     height: 26vh;
